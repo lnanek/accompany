@@ -4,6 +4,34 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+.align-text-left {
+  text-align: left;
+  float:left;
+  width:50%;
+}
+
+.align-text-right {
+  text-align: right;
+  float:left;
+  width:48%;
+}
+
+.event-module {
+  position:relative;
+  height:350px;
+  width:30%;
+  border: 2px solid black;
+  float:left;
+  margin-top:2%;
+  margin-left:2%;
+}
+
+.event-module-details {
+  position:absolute;
+  bottom:5%;
+  width:100%;
+}
+
 body {
     overflow-x: hidden;
 }
