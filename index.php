@@ -74,6 +74,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
+                    <br />
                     <h2>Trending Events</h2>
                     <hr class="star-primary">
                 </div>
@@ -317,12 +318,12 @@
     <!-- Yoga Modal Page -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
-<!--             <div class="close-modal" data-dismiss="modal">
+             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
                     <div class="rl">
                     </div>
                 </div>
-            </div> -->
+            </div>
             <div class="container">
 
 <!--                     <div class="col-lg-5 col-lg-offset-2"> -->
@@ -332,21 +333,8 @@
                         <div class="modal-body col-md-8">
                             <img src="img/portfolio/yoga@2x.png" class="img-responsive img-centered" alt="">
                             <h4>Monday, April 19, 2016</h4>
-                            <p>I'm thinking of going of going to the yoga studio sometime this week. Join me!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
+                            <p>Hey guys! I'd like to hire a yoga instructor to come in for
+                              a morning workout. Who's in? </p>
 
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
@@ -366,6 +354,29 @@
                           </div>
 
                         <button class = "btn " id ="btn1">Join </button>
+                        <br />
+                        <br />
+                        <br />
+                        <strong style = "margin-top: 20px"> Creator </strong>
+                        <br />
+                        <br />
+                        <img class="profile" src='img/portfolio/profile_7.png'> Hanna Xu
+                        <br />
+                        <strong style = "margin-top: 20px"> Attending </strong>
+                        <br />
+                        <br />
+                        <img class="profile" src='img/portfolio/profile_9.png'> Amy Earl
+                        <br />
+                        <img class="profile" src='img/portfolio/profile_1.png'> Jane Wu
+                        <br />
+                        <img class="profile" src='img/portfolio/profile_2.png'> Kimberly Fisher
+                        <br />
+                        <img class="profile" src='img/portfolio/profile_3.png'> Jack Sundar
+                        <br />
+                        <img class="profile" src='img/portfolio/profile_4.png'> Jenny Kang
+                        <br />
+                        <a> and 15 more... </a>
+
 
                     </div>
                 </div>
@@ -396,25 +407,16 @@
                               so I figured I'd hold an intro workshop on it. We'll talk about why you should maximize
                               your 401k and how you should manage it.
                             </p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
 <!--                     </div> -->
-                    <div class="col-md-4">
-                         <div class="vote1"> 40 </div>
+                    <div class="col-md-4" style = "margin-top: 20px">
+                      <div class="">
+                        <strong>Number of People joined</strong>
+                        <div class="">
+                          <strong id = "vote1"><?= file_get_contents("api/4.txt")  ?></strong>
+                        </div>
+                      </div>
                          <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="70"
                             aria-valuemin="0" aria-valuemax="100" style="width:70%">
