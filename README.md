@@ -16,3 +16,8 @@ https://developer.oculus.com/osig/
 VRUnityProject\Accompany\Assets\Plugins\Android\assets
 
 5) Open VRUnityProject\Accompany in Unity and pick "Build and Run"
+
+6) To demo on projector use mobizen.com to show the phone's screen over the internet:
+https://www.mobizen.com
+
+7) To screenshot, press fn-shift-f11 on a Mac on bootcamp running mobizen.
