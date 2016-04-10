@@ -1,6 +1,6 @@
 <?php
 
-header('Access-Control-Allow-Origin: *');
+//header('Access-Control-Allow-Origin: *');
 header('content-type: application/json; charset=utf-8');
 
 $votes = array();
