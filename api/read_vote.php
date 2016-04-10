@@ -1,5 +1,8 @@
 <?php
 
+ header('Access-Control-Allow-Origin: *');
+header('content-type: application/json; charset=utf-8');
+
 // Parse ID parameter
 $id = isset($_REQUEST ['id']) ? (int) $_REQUEST ['id'] : null;
 
