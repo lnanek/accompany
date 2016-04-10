@@ -69,12 +69,28 @@
         <!-- /.container-fluid -->
     </nav>
 
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <div class="intro-text">
+                        <span class="name">Accompany</span>
+                        <hr class="star-light">
+                        <span class="skills">a website where you can find people to ACCOMPANY you to do the thing you wanna do</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
 <!-- Portfolio Grid Section -->
     <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Trending Events</h2>
+                    <h2>Popular Events</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -84,6 +100,7 @@
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <img src="img/portfolio/yoga.png" class="img-responsive" alt=""><br>
                         <strong> Yoga! </strong> <div> Fun </div>
+                          <div>Votes: <?= file_get_contents("api/4.txt")  ?> </div><br>
                           <div>Monday 6pm - Large Room</div><br>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="70"
@@ -99,6 +116,7 @@
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <img src="img/portfolio/finance.png" class="img-responsive" alt=""><br>
                         <strong> Learn about Investing </strong> <div> Money </div>
+                          <div>Votes: <?= file_get_contents("api/2.txt")  ?> </div><br>
                           <div>April 13th, 4pm - Small Room</div><br>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="70"
@@ -114,6 +132,7 @@
                     <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <img src="img/portfolio/gym.png" class="img-responsive" alt=""><br>
                         <strong> Workout session</strong> <div> Fun </div>
+                          <div>Votes: <?= file_get_contents("api/3.txt")  ?> </div><br>
                          <div>Monday 6pm - Large Room</div> <br>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="70"
@@ -129,6 +148,7 @@
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <img src="img/portfolio/podcast.png" class="img-responsive" alt=""><br>
                         <strong> Damn Good Place for Podcasters Meetup</strong> <div>Tech • Sponsored by Sandbox Suites</div>
+                          <div>Votes: <?= file_get_contents("api/5.txt")  ?> </div><br>
                             <div>April 20th, 6:30pm</div><br>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="70"
@@ -144,6 +164,7 @@
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <img src="img/portfolio/money.png" class="img-responsive" alt=""><br>
                         <strong> How to save for retirement</strong> <div>Money •  Sponsored by Credit Karma </div>
+                          <div>Votes: <?= file_get_contents("api/6.txt")  ?> </div><br>
                         <div>April 20th, 6:30pm  </div>  <br>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="70"
@@ -159,6 +180,7 @@
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <img src="img/portfolio/infographic.png" class="img-responsive" alt=""><br>
                         <strong> Infographics workshop</strong> <div> Design • Sponsored by Sandbox Suites</div>
+                          <div>Votes: <?= file_get_contents("api/7.txt")  ?> </div><br>
                           <div>May 7th, 9am</div><br>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="70"
@@ -174,6 +196,7 @@
                     <a href="#portfolioModal7" class="portfolio-link" data-toggle="modal">
                         <img src="img/portfolio/tea.png" class="img-responsive" alt=""><br>
                         <strong> Bubble tea run?</strong> <div> Food </div>
+                          <div>Votes: <?= file_get_contents("api/8.txt")  ?> </div><br>
                           <div>Monday 6pm</div><br>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="70"
@@ -189,6 +212,7 @@
                     <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
                         <img src="img/portfolio/oculus.png" class="img-responsive" alt=""><br>
                         <strong> Play with an Oculus!</strong><div> Fun • Sponsored by Oculus </div>
+                          <div>Votes: <?= file_get_contents("api/9.txt")  ?> </div><br>
                             <div>April 15th, 2pm - Big Room</div><br>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="70"
@@ -202,8 +226,9 @@
 <!-- start of event SBS Happy hour -->
                 <div class="col-sm-4 portfolio-item">
                     <a href="#portfolioModal9" class="portfolio-link" data-toggle="modal">
-                        <img src="img/portfolio/happy.png" class="img-responsive" alt=""><br />
-                        <strong> Yoga! </strong> <div> Fun • Sponsored by Sandbox Suites </div>
+                        <img src="img/portfolio/cruise.png" class="img-responsive" alt=""><br />
+                        <strong> Product team cruise! </strong> <div> Fun • Sponsored by Sandbox Suites </div>
+                          <div>Votes: <?= file_get_contents("api/1.txt")  ?> </div><br>
                           <div>April 21st, 4pm</div><br>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="70"
@@ -219,6 +244,7 @@
                     <a href="#portfolioModal10" class="portfolio-link" data-toggle="modal">
                         <img src="img/portfolio/bagel.png" class="img-responsive" alt=""><br />
                         <strong> SBS Bagel Breakfast </strong> <div> Fun </div>
+                          <div>Votes: <?= file_get_contents("api/10.txt")  ?> </div><br>
                           <div>Monday 6pm - Large Room</div><br>
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="70"
@@ -234,6 +260,7 @@
                     <a href="#portfolioModal11" class="portfolio-link" data-toggle="modal">
                         <img src="img/portfolio/meetup.png" class="img-responsive" alt=""><br />
                         <strong>Artificial Intelligence Meetup</strong> <div>Tech • Sponsored by Sandbox Suites</div>
+                          <div>Votes: <?= file_get_contents("api/11.txt")  ?> </div><br>
                           <div>April 21st, 6:30pm</div><br />
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="70"
@@ -249,6 +276,7 @@
                     <a href="#portfolioModal12" class="portfolio-link" data-toggle="modal">
                         <img src="img/portfolio/lunch.png" class="img-responsive" alt=""><br />
                         <strong>Networking Lunch</strong> <div>Food</div>
+                          <div>Votes: <?= file_get_contents("api/12.txt")  ?> </div><br>
                           <div>April 11th, 12pm</div><br />
                           <div class="progress">
                             <div class="progress-bar" role="progressbar" aria-valuenow="70"
@@ -314,7 +342,6 @@
     </div>
 
     <!-- Portfolio Modals -->
-    <!-- Yoga Modal Page -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
 <!--             <div class="close-modal" data-dismiss="modal">
@@ -324,38 +351,22 @@
                 </div>
             </div> -->
             <div class="container">
-
 <!--                     <div class="col-lg-5 col-lg-offset-2"> -->
-                        <h2>Yoga</h2>
-                        <hr class="star-primary">
+            <h2>Yoga</h2>
             <div class="row">
-                        <div class="modal-body col-md-8">
+                <div class="modal-body col-md-8">
+                      <hr class="star-primary">
                             <img src="img/portfolio/yoga@2x.png" class="img-responsive img-centered" alt="">
                             <h4>Monday, April 19, 2016</h4>
-                            <p>I'm thinking of going of going to the yoga studio sometime this week. Join me!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong>Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong>Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
 <!--                     </div> -->
-                    <div class="col-md-4" style = "margin-top: 20px">
+                    <div class="col-md-4" style = "margin-top: 150px">
                         <div class="">
                           <strong>Number of People joined</strong>
                           <div class="">
-                            <strong id = "vote1"><?= file_get_contents("api/4.txt")  ?></strong>
+                            <strong>40</strong>
                           </div>
                         </div>
                          <div class="progress">
@@ -364,16 +375,15 @@
                               <span class="sr-only">70% Complete</span>
                             </div>
                           </div>
-
-                        <button class = "btn " id ="btn1">Join </button>
-
+                        <button class = "btn btn-info">Join </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Investing modal page -->
+
+
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -383,52 +393,34 @@
                 </div>
             </div>
             <div class="container">
-
-<!--                     <div class="col-lg-5 col-lg-offset-2"> -->
-                        <h2>Learn About Investing</h2>
-                        <hr class="star-primary">
-                        <div class="row">
-                        <div class="modal-body col-md-8">
-
-                            <img src="img/portfolio/finance.png" class="img-responsive img-centered" alt="">
-                            <h4>Monday, April 19, 2016</h4>
-                            <p> Hey everyone, I've been talking with a lot of people about managing their 401ks lately,
-                              so I figured I'd hold an intro workshop on it. We'll talk about why you should maximize
-                              your 401k and how you should manage it.
-                            </p>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Learn about Investing</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong>Start Bootstrap</a>
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong>April 2014</a>
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong>Web Development</a>
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
                                     </strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
-<!--                     </div> -->
-                    <div class="col-md-4">
-                         <div class="vote1"> 40 </div>
-                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                            aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                              <span class="sr-only">70% Complete</span>
-                            </div>
-                          </div>
-                        <button class = "btn " id="btn2">Join </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Workout modal page -->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -438,51 +430,34 @@
                 </div>
             </div>
             <div class="container">
-
-<!--                     <div class="col-lg-5 col-lg-offset-2"> -->
-                        <h2>Workout session</h2>
-                        <hr class="star-primary">
-                        <div class="row">
-                        <div class="modal-body col-md-8">
-
-                            <img src="img/portfolio/gym.png" class="img-responsive img-centered" alt="">
-                            <h4>Monday, April 19, 2016</h4>
-                            <p> Hey everyone, I've been talking with a lot of people about managing their 401ks lately,
-                              so I figured I'd hold an intro workshop on it. We'll talk about why you should maximize
-                              your 401k and how you should manage it.
-                            </p>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Workout session</h2>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
+                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
-                                    <strong>Start Bootstrap</a>
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
                                     </strong>
                                 </li>
                                 <li>Date:
-                                    <strong>April 2014</a>
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
                                     </strong>
                                 </li>
                                 <li>Service:
-                                    <strong>Web Development</a>
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
                                     </strong>
                                 </li>
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
-<!--                     </div> -->
-                    <div class="col-md-4">
-                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
-                            aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                              <span class="sr-only">70% Complete</span>
-                            </div>
-                          </div>
-                        <button class = "btn " id="btn2">Join </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -612,7 +587,6 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/freelancer.js"></script>
-    <script src="js/joinevent.js"></script>
 
 </body>
 
