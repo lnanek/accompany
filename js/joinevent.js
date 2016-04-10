@@ -5,7 +5,7 @@ $("#btn1").click(function(e){
    $.ajax({type: "GET",
   //       data: vote,
         //  dataType: "text",
-         url: "http://accompany.nanek.name/api/vote.php?id=1",
+         url: "http://accompany.nanek.name/api/vote.php?id=4",
          success: function(vote){
            console.log("Success!");
            $("#vote1").html(vote);
@@ -19,7 +19,7 @@ $("#btn1").click(function(e){
 $("#btn2").click(function(e){
      e.preventDefault();
      $.ajax({type: "POST",
-           url: "http://accompany.nanek.name/api/vote.php?id=2",
+           url: "http://accompany.nanek.name/api/vote.php?id=4",
            success: function(data) {
 
            }
@@ -30,6 +30,6 @@ $("#btn2").click(function(e){
 $("#btn3").click(function(e){
      e.preventDefault();
      $.ajax({type: "POST",
-           url: "http://accompany.nanek.name/api/vote.php?id=3"
+           url: "http://accompany.nanek.name/api/vote.php?id=4"
    });
  });
