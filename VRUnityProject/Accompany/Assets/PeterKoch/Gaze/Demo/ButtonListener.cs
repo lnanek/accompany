@@ -5,6 +5,7 @@ using System.Collections;
 public class ButtonListener : MonoBehaviour 
 {
 	public Text textSelected;
+	//public Text textResult;
 
 	public void MyClick (GameObject obj) 
 	{
@@ -76,11 +77,17 @@ public class ButtonListener : MonoBehaviour
 	 {
 		yield return www;
 	     // check for errors
+	     
+		GameObject textResultObject = GameObject.Find ("ResultText");
+		Text textResult = textResultObject.GetComponentInChildren<Text>();
+
 	     if (www.error == null)
 	     {
 	         Debug.Log("WWW Ok!: " + www.data);
+	         textResult.text = "Vote submitted! Votes: " + www.text.ToString();
 	     } else {
 	         Debug.Log("WWW Error: "+ www.error);
+	         textResult.text = "Error voting!";
 	     }    
  }   
 
